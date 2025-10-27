@@ -1,0 +1,114 @@
+/* 폰트 및 기본 스타일 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center;     /* 세로 중앙 정렬 */
+}
+
+/* 메인 컨테이너 */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* 제목 */
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+/* 입력 폼 */
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.input:focus {
+  border-color: #2563eb;
+}
+
+/* 버튼 공통 */
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* 버튼 색상 */
+.btn.add {
+  background-color: #2563eb;
+}
+
+.btn.sort-high {
+  background-color: #1d4ed8;
+}
+
+.btn.sort-low {
+  background-color: #3b82f6;
+}
+
+.btn.clear {
+  background-color: #ef4444;
+}
+
+.button-group {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* 학생 카드 */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f4f6;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.card.highlight {
+  background-color: #dbeafe;
+}
+
+.empty {
+  color: #6b7280;
+  margin-top: 20px;
+}
